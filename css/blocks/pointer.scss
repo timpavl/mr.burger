@@ -1,0 +1,36 @@
+.pointer {
+    position: fixed;
+    top: 91px;
+    right: 52px;
+}
+.pointer__item {
+    margin-bottom: 5px;
+}
+.active {
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.pointer__link {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: relative;
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+    &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    }
+}

@@ -1,0 +1,82 @@
+.reviews__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.reviews__item-hover {
+    opacity: 0;
+    background-color: rgba(20, 20, 20, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviews__item {
+    width: 25%;
+    height: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: grayscale(100%);
+    &:nth-child(1) {
+        background-image: url("../img/photos/user1.jpg");
+    }
+    &:nth-child(2) {
+        background-image: url("../img/photos/user2.jpg");
+    }
+    &:nth-child(3) {
+        background-image: url("../img/photos/user3.jpg");
+    }
+    &:nth-child(4) {
+        background-image: url("../img/photos/user4.jpg");
+    }
+    &:nth-child(5) {
+        background-image: url("../img/photos/user5.jpg");
+    }
+    &:nth-child(6) {
+        background-image: url("../img/photos/user6.jpg");
+    }
+    &:nth-child(7) {
+        background-image: url("../img/photos/user7.jpg");
+    }
+    &:nth-child(8) {
+        background-image: url("../img/photos/user8.jpg");
+    }
+    &:hover,
+    &:focus {
+        .reviews__item-hover {
+            opacity: 1;
+        }
+    }
+}
+.reviews__comment {
+    width: 81%;
+    min-width: 223px;
+}
+.reviews__name {
+    font-family: "Gagalin";
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.reviews__text {
+    color: #ffffff;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 17px;
+}
+.reviews__button {
+    background: $black;
+    &:hover,
+    &:focus {
+        outline: none;
+        background:#000;
+    }
+}
