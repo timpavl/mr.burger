@@ -356,7 +356,7 @@ body {
 .container {
   margin: 0 auto;
   position: relative;
-  width: 940px;
+  max-width: 940px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +369,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px;
   min-height: 100%;
   overflow: hidden;
   /*скрывет контент выходящий за рамки*/ }
