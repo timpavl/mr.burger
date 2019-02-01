@@ -30,6 +30,19 @@ footer {
   position: relative;
   width: 100%; }
 
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  font: inherit;
+  /* По дефолту, шрифтовые свойства, для этих элементов не наследуются */
+  color: inherit;
+  letter-spacing: inherit; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -616,13 +629,13 @@ a {
 .best__info-ni {
   padding-top: 7px; }
 
-.fresh-meat__img {
+.best__li-fresh-meat {
   padding-bottom: 33px; }
 
-.manual-assembly__img {
+.best__li-manual-assembly {
   padding-bottom: 33px; }
 
-.natural-ingredients__img {
+.best__li-natural-ingredients {
   padding-bottom: 40px; }
 
 .reviews__list {
