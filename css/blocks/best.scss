@@ -7,6 +7,7 @@
     justify-content: center;
     flex: 1;
 }
+.title-h2,
 .best-title {
     color: $black;
     font-family: "Gagalin";
@@ -36,7 +37,7 @@
 .best__info {
     color: $black;
     font-family: "Ubuntu";
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 24px;
 }
@@ -57,4 +58,41 @@
 }
 .best__li-natural-ingredients {
     padding-bottom: 40px;
+}
+@media only screen and (max-width: 940px) {
+    .best__section {
+        padding: 0 4%;
+    }
+    .best__li {
+        flex: 1 1 217px;
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .best__list {
+        flex-direction: column;
+    }
+    .best__li {
+        flex: 1 1 auto;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+    .fresh-meat__svg {
+        width: 25vw;
+        height: 89px;
+    }
+    .fresh-hand__svg {
+        width: 25vw;
+        height: 85px;
+    }
+    .fresh-natural__svg {
+        width: 25vw;
+        height: 75px;
+    }
+   /* .best__li-fresh-meat {
+        margin: 0 auto;
+    }*/
 }

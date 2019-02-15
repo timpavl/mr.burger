@@ -32,3 +32,26 @@
     justify-content: center;
     padding-bottom: 41px;
 }
+@media only screen and (max-width: 887px) {
+    .heading__container {
+        flex-direction: column;
+        padding: 0 13%;
+    }
+    .heading__container-text {
+        text-align: center;
+        max-width: 406px;
+    }
+    .heading__heading-burger {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 63px;
+    }
+    .heading__container-description {
+        font-size: 54px;
+    }
+}

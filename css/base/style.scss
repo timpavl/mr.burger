@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -20,12 +21,19 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.align-center {
+	display: flex;
+	align-items: center;
+}
 .wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden; /*скрывет контент выходящий за рамки*/
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden; /*скрывет контент выходящий за рамки*/
 }
 
 .section {
@@ -43,4 +51,10 @@ ul {
 }
 a {
     transition: 250ms;
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		padding-left: 3%;
+		padding-right: 4%;
+	}
 }

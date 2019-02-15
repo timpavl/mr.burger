@@ -3,7 +3,10 @@ $orange: #e45028;
 $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
-// Resolutions
+// functions
+@function rem($px) {
+    @return $px/16px + 0rem;
+  }
 // Normalize
 @import "base/normalize.scss";
 // Base
@@ -16,3 +19,6 @@ $red: #e35028;
 @import "blocks/best.scss";
 @import "blocks/reviews.scss";
 @import "blocks/pointer.scss";
+@import "blocks/team.scss";
+@import "blocks/menu.scss";
+@import "blocks/footer.scss";

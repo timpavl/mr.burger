@@ -80,3 +80,33 @@
         background:#000;
     }
 }
+@media only screen and (max-width: 959px) {
+    .reviews__comment {
+        min-width: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .reviews__comment {
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .reviews__item {
+        height: 25%;
+        min-width: 50%;
+    }
+    .reviews__text {
+        line-height: 19px;
+    }
+}
+@media only screen and (max-width: 551px) {
+    .reviews__name {
+        text-align: center;
+        font-size: 24px;
+    }
+    .reviews__text {
+        display: none;
+    }
+}

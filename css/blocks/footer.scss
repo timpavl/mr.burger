@@ -1,0 +1,27 @@
+.footer {
+    height: 60px;
+    background: url("../img/footer_bg.jpg") center center / cover no-repeat;
+}
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+}
+.footer__address {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer__phone-link {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: $orange;
+}
+.social-networks__vk-icon {
+    fill: #fff;
+    width: 23px;
+    height: 13px;
+}
