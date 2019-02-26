@@ -37,10 +37,13 @@
 }
 .team__li-content {
     padding-top: 1rem;
-    display: flex;
+    display: none;
     max-height: 100px;
     font-family: "Ubuntu";
     font-size: 14px;
+}
+.team__li_active .team__li-content {
+    display: flex;
 }
 .team__li-text {
     padding-left: 1.3125rem;
@@ -88,7 +91,7 @@
     .team__li-button {
         margin: 0 auto;
     }
-    .team__li-content {
+    .team__li_active .team__li-content {
         display: block;
         height: auto;
         max-height: none;
