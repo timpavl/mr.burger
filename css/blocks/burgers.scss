@@ -43,7 +43,7 @@
 .burgers__list {
     display: flex;
     position: relative;
-    height: 85%;
+    height: 100%;
     right: 0;
     transition: right .7s;
 }
@@ -62,7 +62,7 @@
 }
 .burgers__text-bg {
     width: 50%;
-    height: 90%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -96,6 +96,10 @@
 .button_burgers {
     margin-left: 29px;
 }
+.burgers__img {
+    width: 100%;
+    height: 100%;
+}
 .burgers__compound {
     position: absolute;
     display: flex;
@@ -111,6 +115,13 @@
     padding: 1% 0;
     cursor: pointer;
     transition: .3s;
+    &:hover {
+        background-color: rgba($red, .9);    
+        .burgers__compound-list {
+            left: 100%;
+            opacity: 1;
+        }
+    }
 }
 .burgers__compound-icon {
     fill: #ffffff;
@@ -122,4 +133,125 @@
     font-family: "Gagalin";
     font-size: 14px;
     font-weight: 400;
+}
+.burgers__kcals {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    height: 90px;
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "Gagalin";
+    font-weight: 400;
+}
+.burgers__kcals-icon {
+    fill: #ffffff;
+    width: 66%;
+    height: 66%;
+}
+.burgers__kcals-number {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.burgers__kcals-text{
+    font-size: 14px;
+}
+/*--- кнопка СВОЙСТВА ---*/
+.burgers__compound-list {
+    position: absolute;
+    cursor: initial;
+    top: 0;
+    background: rgba(255,255,255,.8);
+    color: $black;
+    border-radius: 5px;
+    width: auto;
+    padding: 16px;
+    opacity: 0;
+    transition: opacity .4s;
+    left: -100000%;
+}
+.burgers__table-col {
+    padding: 0.3rem;
+    font-size: 14px;
+}
+.burgers__table-icon {
+    width: 48px;
+    &_beef {
+        fill: $red;
+    }
+}
+.burgers__table-col_title {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 1.3rem;
+}
+.burgers__table-col_text {
+    text-align: right;
+    padding-left: 64px;
+    white-space: nowrap;
+    font-weight: 300;
+}
+@media only screen and (max-width: 1000px) {
+    .burgers__content {
+        height: 100vh;
+    }
+    .burgers__slider {
+        height: 100vh;
+    }
+    .burgers__list {
+        height: unset;
+    }
+    .burgers__item {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .burgers__img-bg {
+        width: 60%;
+        margin-right: 0;
+    }
+    .burgers__text-bg {
+        width: 85%;
+        height: 60%;
+        text-align: center;
+    }
+    .burgers__kcals {
+        left: auto; 
+        bottom: auto; 
+        right: 0;
+        top: 0;
+    }
+    .burgers__order-row {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .burgers__img-bg {
+        width: 97%;
+        margin-bottom: 2%;
+    }
+    .burgers__text-bg {
+        width: 100%;
+        height: 50%;
+    }
+    .burgers__title {
+        width: 60%;
+        min-width: 228px;
+        margin: 0 auto;
+        font-size: 50px;
+    }
+    .burgers__price-value {
+        font-size: 30px;
+    }
+    .burgers__price {
+        font-size: 24px;
+    }
 }

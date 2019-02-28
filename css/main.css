@@ -978,10 +978,16 @@ a {
   font-family: "Ubuntu";
   font-size: 14px; }
 
-.team__li_active .team__li-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.team__li_active {
+  padding-bottom: 100px; }
+  .team__li_active .team__li-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .team__li_active .team__li-button::before {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
 
 .team__li-text {
   padding-left: 1.3125rem; }
@@ -1528,7 +1534,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 85%;
+  height: 100%;
   right: 0;
   -webkit-transition: right .7s;
   -o-transition: right .7s;
@@ -1559,7 +1565,7 @@ a {
 
 .burgers__text-bg {
   width: 50%;
-  height: 90%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1604,6 +1610,10 @@ a {
 .button_burgers {
   margin-left: 29px; }
 
+.burgers__img {
+  width: 100%;
+  height: 100%; }
+
 .burgers__compound {
   position: absolute;
   display: -webkit-box;
@@ -1630,6 +1640,11 @@ a {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
+  .burgers__compound:hover {
+    background-color: rgba(227, 80, 40, 0.9); }
+    .burgers__compound:hover .burgers__compound-list {
+      left: 100%;
+      opacity: 1; }
 
 .burgers__compound-icon {
   fill: #ffffff;
@@ -1641,3 +1656,130 @@ a {
   font-family: "Gagalin";
   font-size: 14px;
   font-weight: 400; }
+
+.burgers__kcals {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 90px;
+  height: 90px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: "Gagalin";
+  font-weight: 400; }
+
+.burgers__kcals-icon {
+  fill: #ffffff;
+  width: 66%;
+  height: 66%; }
+
+.burgers__kcals-number {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 20px; }
+
+.burgers__kcals-text {
+  font-size: 14px; }
+
+/*--- кнопка СВОЙСТВА ---*/
+.burgers__compound-list {
+  position: absolute;
+  cursor: initial;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  color: #2f3234;
+  border-radius: 5px;
+  width: auto;
+  padding: 16px;
+  opacity: 0;
+  -webkit-transition: opacity .4s;
+  -o-transition: opacity .4s;
+  transition: opacity .4s;
+  left: -100000%; }
+
+.burgers__table-col {
+  padding: 0.3rem;
+  font-size: 14px; }
+
+.burgers__table-icon {
+  width: 48px; }
+  .burgers__table-icon_beef {
+    fill: #e35028; }
+
+.burgers__table-col_title {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 1.3rem; }
+
+.burgers__table-col_text {
+  text-align: right;
+  padding-left: 64px;
+  white-space: nowrap;
+  font-weight: 300; }
+
+@media only screen and (max-width: 1000px) {
+  .burgers__content {
+    height: 100vh; }
+  .burgers__slider {
+    height: 100vh; }
+  .burgers__list {
+    height: unset; }
+  .burgers__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .burgers__img-bg {
+    width: 60%;
+    margin-right: 0; }
+  .burgers__text-bg {
+    width: 85%;
+    height: 60%;
+    text-align: center; }
+  .burgers__kcals {
+    left: auto;
+    bottom: auto;
+    right: 0;
+    top: 0; }
+  .burgers__order-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media only screen and (max-width: 550px) {
+  .burgers__img-bg {
+    width: 97%;
+    margin-bottom: 2%; }
+  .burgers__text-bg {
+    width: 100%;
+    height: 50%; }
+  .burgers__title {
+    width: 60%;
+    min-width: 228px;
+    margin: 0 auto;
+    font-size: 50px; }
+  .burgers__price-value {
+    font-size: 30px; }
+  .burgers__price {
+    font-size: 24px; } }
