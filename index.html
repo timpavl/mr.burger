@@ -124,8 +124,8 @@
                                     <div class="burgers__compound" tabindex="0">
                                         <svg class="burgers__compound-icon" viewBox="0 0 45.748 44.625">
                                             <use xlink:href="img/sprite.svg#burger"></use>
-                                            <div class="burgers__composition-text">состав</div>
                                         </svg>
+                                            <div class="burgers__composition-text">состав</div> <!--НЕЛЬЗЯ ДИВ В СВГ-->
                                         <div class="burgers__compound-list">
                                             <table class="burgers__table">
                                                 <tbody>
@@ -682,11 +682,11 @@
             <section class="section order">
                 <div class="order__container">
                     <h2 class="title-h2 title-order">Закажите доставку</h2>
-                    <form action="" class="form-comment">
+                    <form class="form-comment">
                         <div class="form-comment__user-info">
                             <div class="form__row">
-                                <label for="name" class="form__row-name">
-                                    <h3 class="form__row-text form__row-name-text">Имя</h3>
+                                <label class="form__row-name">
+                                    <span class="form__row-text form__row-name-text">Имя</span>
                                     <input type="text" class="form__row-column form__row-name-input" name="name">
                                 </label>
                                 <label for="phone" class="form__row-phone">
@@ -742,7 +742,7 @@
                             <div class="form__row">                                
                                 <label for="no-callback" class="form__row-no-callback" tabindex="0">
                                     <input type="checkbox" class="form__row-no-callback-input" name="no-callback" id="no-callback" checked="">
-                                    <div class="form__row-no-callback-button"></div>
+                                    <span class="form__row-no-callback-button"></span>
                                     <span class="form__row-text form__row-no-callback-text">Не перезванивать</span>
                                 </label>                    
                             </div>

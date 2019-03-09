@@ -175,3 +175,33 @@
         color: $red;
     }
 }
+@media only screen and (max-width: 960px) {
+    .title-order {
+        text-align: center;
+    }
+    .form-comment {
+        max-width: 460px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .form-comment__user-info {
+        width: 100%;
+    }
+    .form-comment__review {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .form__row-button {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .title-order {
+        padding-bottom: 2%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .title-order {
+        font-size: 50px;
+    }
+}

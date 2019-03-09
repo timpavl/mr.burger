@@ -64,8 +64,13 @@
     padding-bottom: 0;
 }
 .menu__content {
-    max-width: 1500px;
+    max-width: 0px;
     background: rgba(47, 50, 52, 0.93);
+}
+.active {
+    &.menu__content {
+        max-width: 1500px;
+    }
 }
 .menu__content-text {
     height: 100vh;

@@ -778,6 +778,12 @@ a {
   .best-title {
     text-align: center; } }
 
+@media only screen and (max-width: 450px) {
+  .best__info-fm {
+    padding-top: 1%; }
+  .best__info-ma {
+    padding-top: 1%; } }
+
 .reviews__list {
   width: 100%;
   height: 100%;
@@ -898,10 +904,10 @@ a {
 .pointer__item {
   margin-bottom: 5px; }
 
-.active {
-  border: 1px solid #fff;
-  border-radius: 50%; }
-
+/*.active {
+    border: 1px solid #fff;
+    border-radius: 50%;
+}*/
 .pointer__link {
   width: 16px;
   height: 16px;
@@ -974,20 +980,19 @@ a {
 .team__li-content {
   padding-top: 1rem;
   display: none;
-  max-height: 100px;
   font-family: "Ubuntu";
   font-size: 14px; }
 
-.team__li_active {
-  padding-bottom: 100px; }
-  .team__li_active .team__li-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .team__li_active .team__li-button::before {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg); }
+.team-active.team__li-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px; }
+
+.team-active.team__li-button::before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .team__li-text {
   padding-left: 1.3125rem; }
@@ -1156,8 +1161,11 @@ a {
   padding-bottom: 0; }
 
 .menu__content {
-  max-width: 1500px;
+  max-width: 0px;
   background: rgba(47, 50, 52, 0.93); }
+
+.active.menu__content {
+  max-width: 1500px; }
 
 .menu__content-text {
   height: 100vh;
@@ -1261,6 +1269,17 @@ a {
 .social-networks__tw-icon {
   width: 20px;
   height: 16px; }
+
+@media only screen and (max-width: 460px) {
+  .footer {
+    height: auto; }
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .footer__pantecta {
+    text-align: center; } }
 
 .order {
   background: url("../img/order_bg.jpg") center center/cover no-repeat; }
@@ -1457,6 +1476,36 @@ a {
   padding-left: 20px; }
   .button-clean:hover, .button-clean:focus {
     color: #e35028; }
+
+@media only screen and (max-width: 960px) {
+  .title-order {
+    text-align: center; }
+  .form-comment {
+    max-width: 460px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .form-comment__user-info {
+    width: 100%; }
+  .form-comment__review {
+    padding-top: 20px;
+    width: 100%; }
+  .form__row-button {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media only screen and (max-width: 960px) {
+  .title-order {
+    padding-bottom: 2%; } }
+
+@media only screen and (max-width: 500px) {
+  .title-order {
+    font-size: 50px; } }
 
 .burgers {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b));

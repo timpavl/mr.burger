@@ -38,16 +38,15 @@
 .team__li-content {
     padding-top: 1rem;
     display: none;
-    max-height: 100px;
     font-family: "Ubuntu";
     font-size: 14px;
 }
-.team__li_active {
-    padding-bottom: 100px;
-    .team__li-content {
+.team-active {
+    &.team__li-content {
         display: flex;
+        height: 100px;
     }
-    .team__li-button::before {
+    &.team__li-button::before {
         transform: rotate(180deg);
     }
 }

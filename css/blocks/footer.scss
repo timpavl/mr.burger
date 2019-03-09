@@ -59,3 +59,14 @@
     width: 20px;
     height: 16px;
 }
+@media only screen and (max-width: 460px) {
+    .footer {
+        height: auto;
+    }
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__pantecta {
+        text-align: center;
+    }
+}
