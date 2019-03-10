@@ -68,11 +68,18 @@
     background: rgba(47, 50, 52, 0.93);
 }
 .active {
-    &.menu__content {
+    .menu__label {
+        color: $yellow;
+    }
+    .menu__content {
         max-width: 1500px;
+    }
+    .menu__content-text {
+        display: inline-block;
     }
 }
 .menu__content-text {
+    display: none;
     height: 100vh;
     padding: 35px 60px;
     padding-bottom: 0;    
@@ -80,6 +87,9 @@
     font-weight: 300;
     font-size: 14px;
     color: #ffffff;
+}
+.menu-title_none {
+    display: none;
 }
 @media only screen and (max-width: 768px) {
     .menu-title {
@@ -95,7 +105,5 @@
     }
 }
 @media only screen and (max-width: 600px) {
-    .menu-title {
-        display: none;
-    }
+    
 }

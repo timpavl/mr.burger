@@ -47,7 +47,10 @@ button {
     color: inherit;
     letter-spacing: inherit;
 }
-
+a,
+button {
+    outline: none;
+}
 * {
     box-sizing: border-box;
 }

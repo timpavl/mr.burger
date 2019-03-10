@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section heading">
+            <section id="heading" class="section heading">
                 <div class="container heading__section">
                     <header class="header">
                         <a class="logo">
@@ -21,32 +21,32 @@
                         <div class="header__nav">
                             <nav class="navigation">
                                 <ul class="navigation__list">
-                                    <li class="navigation__list-item"><a href="" class="navigation__list-link">
+                                    <li class="navigation__list-item"><a href="#best" class="navigation__list-link">
                                         о нас
                                     </a></li>
-                                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">
+                                    <li class="navigation__list-item"><a href="#burgers" class="navigation__list-link">
                                         бургеры
                                     </a></li>
-                                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">
+                                    <li class="navigation__list-item"><a href="#team" class="navigation__list-link">
                                         команда
                                     </a></li>
-                                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">
+                                    <li class="navigation__list-item"><a href="#menu" class="navigation__list-link">
                                         меню
                                     </a></li>
-                                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">
+                                    <li class="navigation__list-item"><a href="#reviews" class="navigation__list-link">
                                         отзывы
                                     </a></li>
-                                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">
+                                    <li class="navigation__list-item"><a href="#workflow" class="navigation__list-link">
                                         как мы работаем 
                                     </a></li>
-                                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">
+                                    <li class="navigation__list-item"><a href="#map" class="navigation__list-link">
                                         контакты 
                                     </a></li>
                                 </ul>
                             </nav>
-                            <a href="#" class="button button-order">Заказать</a>
+                            <a href="#order" class="button button-order">Заказать</a>
                             <button class="hamburger-menu">
-                                <div class="hamburger-menu-icon"></div>
+                                <span class="hamburger-menu-icon"></span>
                             </button>
                         </div>
                     </header>
@@ -65,7 +65,7 @@
                     </a>
                 </div>
             </section>
-            <section class="section best">
+            <section id="best" class="section best">
                 <div class="container best__section">
                     <h2 class="best-title">мы лучшие</h2>
                     <ul class="best__list">
@@ -99,7 +99,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section burgers">
+            <section id="burgers" class="section burgers">
                 <div class="burgers__container">
                     <div class="burgers__content">
                         <button class="left-arrow__button" type="button">
@@ -125,7 +125,7 @@
                                         <svg class="burgers__compound-icon" viewBox="0 0 45.748 44.625">
                                             <use xlink:href="img/sprite.svg#burger"></use>
                                         </svg>
-                                            <div class="burgers__composition-text">состав</div> <!--НЕЛЬЗЯ ДИВ В СВГ-->
+                                            <span class="burgers__composition-text">состав</span> <!--НЕЛЬЗЯ ДИВ В СВГ-->
                                         <div class="burgers__compound-list">
                                             <table class="burgers__table">
                                                 <tbody>
@@ -209,9 +209,9 @@
                                     </div>
                                     <div class="burgers__compound" tabindex="0">
                                             <svg class="burgers__compound-icon" viewBox="0 0 45.748 44.625">
-                                                <use xlink:href="img/sprite.svg#burger"></use>
-                                                <div class="burgers__composition-text">состав</div>
-                                            </svg>
+                                                <use xlink:href="img/sprite.svg#burger"></use></svg>
+                                                <span class="burgers__composition-text">состав</span>
+                                            
                                             <div class="burgers__compound-list">
                                                 <table class="burgers__table">
                                                     <tbody>
@@ -295,9 +295,9 @@
                                     </div>
                                     <div class="burgers__compound" tabindex="0">
                                             <svg class="burgers__compound-icon" viewBox="0 0 45.748 44.625">
-                                                <use xlink:href="img/sprite.svg#burger"></use>
-                                                <div class="burgers__composition-text">состав</div>
-                                            </svg>
+                                                <use xlink:href="img/sprite.svg#burger"></use></svg>
+                                                <span class="burgers__composition-text">состав</span>
+                                            
                                             <div class="burgers__compound-list">
                                                 <table class="burgers__table">
                                                     <tbody>
@@ -381,9 +381,9 @@
                                     </div>
                                     <div class="burgers__compound" tabindex="0">
                                             <svg class="burgers__compound-icon" viewBox="0 0 45.748 44.625">
-                                                <use xlink:href="img/sprite.svg#burger"></use>
-                                                <div class="burgers__composition-text">состав</div>
-                                            </svg>
+                                                <use xlink:href="img/sprite.svg#burger"></use></svg>
+                                                <span class="burgers__composition-text">состав</span>
+                                            
                                             <div class="burgers__compound-list">
                                                 <table class="burgers__table">
                                                     <tbody>
@@ -467,9 +467,9 @@
                                     </div>
                                     <div class="burgers__compound" tabindex="0">
                                             <svg class="burgers__compound-icon" viewBox="0 0 45.748 44.625">
-                                                <use xlink:href="img/sprite.svg#burger"></use>
-                                                <div class="burgers__composition-text">состав</div>
-                                            </svg>
+                                                <use xlink:href="img/sprite.svg#burger"></use></svg>
+                                                <span class="burgers__composition-text">состав</span>
+                                            
                                             <div class="burgers__compound-list">
                                                 <table class="burgers__table">
                                                     <tbody>
@@ -549,7 +549,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section team flex-end">
+            <section id="team" class="section team flex-end">
                 <div class="team__container">
                     <div class="team__content">
                         <h2 class="team__content-title title-h2">команда</h2>
@@ -602,11 +602,14 @@
                     </div>
                 </div>
             </section>
-            <section class="section menu">
+            <section id="menu" class="section menu">
                 <h2 class="menu-title title-h2">меню</h2>
                 <ul class="menu__list">
                     <li class="menu__li">
                         <div class="menu__li-bg1 menu__tint"><button class="title-h2 menu__label" type="button">Для мясоедов</button></div>
+                        <div class="menu__content"><p class="menu__content-text">
+                            Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.
+                        </p></div>
                     </li>
                     <li class="menu__li">
                         <div class="menu__li-bg2 menu__tint"><button class="title-h2 menu__label" type="button">Вегетарианское</button></div>
@@ -616,10 +619,13 @@
                     </li>
                     <li class="menu__li">
                         <div class="menu__li-bg3 menu__tint"><button class="title-h2 menu__label" type="button">Диетическое</button></div>
+                        <div class="menu__content"><p class="menu__content-text">
+                            Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.
+                        </p></div>
                     </li>
                 </ul>
             </section>
-            <section class="section reviews">
+            <section id="reviews" class="section reviews">
                 <ul class="reviews__list">
                     <li class="reviews__item"><div class="reviews__item-hover">
                         <div class="reviews__comment">
@@ -679,69 +685,98 @@
                     </div></li>
                 </ul>
             </section>
-            <section class="section order">
+            <section id="workflow" class="section workflow">
+                <div class="container workflow-section">
+                    <h2 class="title-h2 title-workflow">как мы работаем</h2>
+                    <div class="player">
+                        <div class="player__wrapper">
+                            <iframe id="yt-player" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/zmg_jOwa9Fc?controls=0&amp;disablekb=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;modestbranding=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fyasevplaton.github.io&amp;widgetid=1" width="640" height="405" frameborder="0"></iframe>
+                            <div class="player__splash"></div>
+                        </div>
+                        <div class="player__controls">
+                            <button class="player__start">
+                                <svg class="player__start-icon" viewBox="0 0 300 300">
+                                    <use xlink:href="img/sprite.svg#play"></use>
+                                </svg>
+                                <span class="player__pause-icon"></span>
+                            </button>
+                            <input type="range" class="player__playback" name="playback" min="0" max="100" value="0" step="0.001">
+                            <div class="player__volume">
+                                <button class="player__volume-btn">
+                                    <svg class="player__volume-icon" viewBox="0 0 300 300">
+                                    <use xlink:href="img/sprite.svg#volume"></use>
+                                    </svg>
+                                    <span class="player__volume-muted"></span>
+                                </button>
+                                <input type="range" class="player__volume-runner" name="volume" min="0" max="100" value="50" step="1">
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </section>
+            <section id="order" class="section order">
                 <div class="order__container">
                     <h2 class="title-h2 title-order">Закажите доставку</h2>
                     <form class="form-comment">
                         <div class="form-comment__user-info">
                             <div class="form__row">
                                 <label class="form__row-name">
-                                    <span class="form__row-text form__row-name-text">Имя</span>
+                                    <span class="form__row-text form__row-name-text">Имя</span></label>
                                     <input type="text" class="form__row-column form__row-name-input" name="name">
-                                </label>
-                                <label for="phone" class="form__row-phone">
-                                    <h3 class="form__row-text form__row-phone-text">Телефон</h3>
+                                
+                                <label class="form__row-phone">
+                                    <span class="form__row-text form__row-phone-text">Телефон</span></label>
                                     <input type="text" class="form__row-column form__row-phone-input" name="phone">
-                                </label>
+                                
                             </div>
                             <div class="form__row">
-                                <label for="street" class="form__row-street">
-                                    <h3 class="form__row-text form__row-street-text">Улица</h3>
+                                <label class="form__row-street">
+                                    <span class="form__row-text form__row-street-text">Улица</span></label>
                                     <input type="text" class="form__row-column form__row-street-input" name="street">
-                                </label>
+                                
                             </div>
                             <div class="form__row">
-                                <label for="house" class="form__row-house">
-                                    <h3 class="form__row-text form__row-house-text">Дом</h3>
+                                <label class="form__row-house">
+                                    <span class="form__row-text form__row-house-text">Дом</span></label>
                                     <input type="text" class="form__row-column form__row-house-input" name="house">
-                                </label>
-                                <label for="housing" class="form__row-housing">
-                                    <h3 class="form__row-text form__row-housing-text">Корпус</h3>
+                                
+                                <label class="form__row-housing">
+                                    <span class="form__row-text form__row-housing-text">Корпус</span></label>
                                     <input type="text" class="form__row-column form__row-housing-input" name="housing">
-                                </label>
-                                <label for="apartment" class="form__row-apartment">
-                                    <h3 class="form__row-text form__row-apartment-text">Квартира</h3>
+                                
+                                <label class="form__row-apartment">
+                                    <span class="form__row-text form__row-apartment-text">Квартира</span></label>
                                     <input type="text" class="form__row-column form__row-apartment-input" name="apartment">
-                                </label>
-                                <label for="floor" class="form__row-floor">
-                                    <h3 class="form__row-text form__row-floor-text">Этаж</h3>
+                                
+                                <label class="form__row-floor">
+                                    <span class="form__row-text form__row-floor-text">Этаж</span></label>
                                     <input type="text" class="form__row-column form__row-floor-input" name="floor">
-                                </label>
+                                
                             </div>
                         </div>
                         <div class="form-comment__review">
                             <div class="form__row">
                                 <label for="comment" class="form__row-comment">
-                                    <h3 class="form__row-text form__row-comment-text">Комментарий</h3>
+                                    <span class="form__row-text form__row-comment-text">Комментарий</span>
                                     <textarea name="comment" id="comment" class="form__row-column form__row-comment-textarea"></textarea>
                                 </label>
                             </div>
                             <!--КНОПКИ-->
                             <div class="form__row form__row_radio">
-                                <label class="form__row-radio" tabindex="0">                                    
                                     <input type="radio" name="card" id="card-no" class="form__row-radio-input" value="no">
+                                <label class="form__row-radio" tabindex="0">                                 
                                     <span class="form__row-radio-button"></span>
                                     <span class="form__row-text form__row-radio-text">Потребуется сдача</span>
                                 </label>
-                                <label class="form__row-radio" tabindex="0">                                    
-                                    <input type="radio" name="card" id="card-yes" class="form__row-radio-input" value="yes">
+                                <input type="radio" name="card" id="card-yes" class="form__row-radio-input" value="yes">
+                                <label class="form__row-radio" tabindex="0">               
                                     <span class="form__row-radio-button"></span>
                                     <span class="form__row-text form__row-radio-text">Оплата по карте</span>
                                 </label>
                             </div>
-                            <div class="form__row">                                
+                            <div class="form__row">       
+                                    <input type="checkbox" class="form__row-no-callback-input" name="no-callback" id="no-callback" checked="">                         
                                 <label for="no-callback" class="form__row-no-callback" tabindex="0">
-                                    <input type="checkbox" class="form__row-no-callback-input" name="no-callback" id="no-callback" checked="">
                                     <span class="form__row-no-callback-button"></span>
                                     <span class="form__row-text form__row-no-callback-text">Не перезванивать</span>
                                 </label>                    
@@ -754,8 +789,10 @@
                     </form>
                 </div>
             </section>
-            <section class="section">
-                <div id="map" class="map"></div>
+            <section class="section map">
+                <div id="map" style="width: 100%; height: 100%;" class="map">
+                    
+                </div>
             </section>
             <footer class="footer">
                 <div class="container footer__container">
@@ -794,21 +831,43 @@
             </footer>
         </div>
         <ul class="pointer">
-            <li class="pointer__item active"><a href="#" class="pointer__link"></a></li>
-            <li class="pointer__item"><a href="#" class="pointer__link"></a></li>
-            <li class="pointer__item"><a href="#" class="pointer__link"></a></li>
-            <li class="pointer__item"><a href="#" class="pointer__link"></a></li>
-            <li class="pointer__item"><a href="#" class="pointer__link"></a></li>
-            <li class="pointer__item"><a href="#" class="pointer__link"></a></li>
-            <li class="pointer__item"><a href="#" class="pointer__link"></a></li>
-            <li class="pointer__item"><a href="#" class="pointer__link"></a></li>
-            <li class="pointer__item"><a href="#" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#heading" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#best" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#burgers" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#team" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#menu" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#reviews" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#workflow" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#order" class="pointer__link"></a></li>
+            <li class="pointer__item"><a href="#map" class="pointer__link"></a></li>
         </ul>
+    </div>
+    <!--меню бургер-->
+    <div class="popup-menu">
+        <div class="popup-menu__wrapper">
+            <div class="popup-menu__logo">
+                <a href="index.html">
+                    <img class="popup-menu__img" src="images/icons/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="popup-menu__close"></div>
+            <nav class="nav">
+                <ul class="popup-menu__list">
+                    <li class="popup-menu__item"> <a href="#" class="popup-menu__item-link">почему мы</a></li>
+                    <li class="popup-menu__item"> <a href="#" class="popup-menu__item-link">меню</a></li>
+                    <li class="popup-menu__item"> <a href="#" class="popup-menu__item-link">советы</a></li>
+                    <li class="popup-menu__item"> <a href="#" class="popup-menu__item-link">кто мы</a></li>
+                    <li class="popup-menu__item"> <a href="#" class="popup-menu__item-link">заказ</a></li>
+                    <li class="popup-menu__item"> <a href="#" class="popup-menu__item-link">контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <!-- script JS -->
     <script src="js/jquery-v3.3.1.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

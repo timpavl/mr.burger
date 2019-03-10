@@ -33,6 +33,7 @@
         border-left: 0.3125rem solid transparent;
         border-right: 0.3125rem solid transparent;
         margin-right: .625rem;
+        transition: 0.5s;
     }
 }
 .team__li-content {
@@ -42,11 +43,11 @@
     font-size: 14px;
 }
 .team-active {
-    &.team__li-content {
+    .team__li-content {
         display: flex;
-        height: 100px;
+        height: auto;
     }
-    &.team__li-button::before {
+    .team__li-button::before {
         transform: rotate(180deg);
     }
 }
